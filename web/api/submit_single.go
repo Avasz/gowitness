@@ -63,6 +63,9 @@ func (h *ApiHandler) SubmitSingleHandler(w http.ResponseWriter, r *http.Request)
 		if request.Options.Format != "" {
 			options.Scan.ScreenshotFormat = request.Options.Format
 		}
+		if request.Options.ScreenshotFullPage {
+			options.Scan.ScreenshotFullPage = request.Options.ScreenshotFullPage
+		}
 	}
 
 	writer, err := writers.NewMemoryWriter(1)

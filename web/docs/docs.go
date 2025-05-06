@@ -578,6 +578,9 @@ const docTemplate = `{
                 "format": {
                     "type": "string"
                 },
+                "screenshotfullpage": {
+                    "type": "boolean"
+                },
                 "timeout": {
                     "type": "integer"
                 },

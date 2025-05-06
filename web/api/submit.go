@@ -23,6 +23,7 @@ type submitRequestOptions struct {
 	Timeout   int    `json:"timeout"`
 	Delay     int    `json:"delay"`
 	Format    string `json:"format"`
+	ScreenshotFullPage bool `json:"screenshotfullpage"`
 }
 
 // SubmitHandler submits URL's for scans, writing them to the database.
